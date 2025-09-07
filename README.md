@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+#  AI Resume Analyzer — Next.js + OpenAI  
 
-## Getting Started
+Analyze your resume in seconds with AI-powered insights—ATS score, missing skills, grammar fixes, and polished summary.
 
-First, run the development server:
+---
+
+##  Features  
+
+- **Multi-format upload**: PDF, DOCX, or plain TXT  
+- **Smart ATS Scoring**: Evaluates formatting, keywords, structure, metrics, and contact info  
+- **Skills Insights**: Highlights missing or weak skills based on React Frontend standards  
+- **Grammar & Style Enhancements**: Before/after suggestions for clarity and polish  
+- **AI-generated Summaries**:  
+  -  Short, LinkedIn-ready snippet  
+  -  Concise 2–3 line resume summary  
+- **Optional Job Description Input**: Tailor analysis to specific roles  
+- **Fast, Beautiful UI**: Built with Next.js v15, Tailwind CSS, and clean responsive design  
+- **Security-first**: In-memory processing, no data retention by default  
+
+---
+
+##  Tech Stack  
+
+| Layer           | Highlights                          |
+|----------------|--------------------------------------|
+| Frontend       | Next.js 15, React, Tailwind CSS      |
+| File Parsing   | `pdf-parse` for PDFs, `mammoth` for DOCX (with dynamic imports) |
+| AI & Scoring   | OpenAI (gpt-4o-mini), custom rubric in TypeScript |
+| State & Styling| Built-in React state, CSS utilities |
+| Runtime        | Node.js route handler (`runtime = "nodejs"`) for server-side file & AI logic |
+
+---
+
+##  Quick Start  
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+git clone https://github.com/vishalkumarmx/ai-resume-analyzer.git
+cd ai-resume-analyzer
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Install
+npm install       
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Setup API key
+cp .env.example .env.local
+# edit .env.local to add your OPENAI_API_KEY
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Run locally
+npm dev            
+open http://localhost:3000
