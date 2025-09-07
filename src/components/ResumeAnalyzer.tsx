@@ -63,7 +63,7 @@ export default function ResumeAnalyzer() {
             <h1 className="font-bold tracking-tight text-lg">Resume Analyzer</h1>
           </div>
         </div>
-        <a className="text-sm rounded-xl border px-3 py-1.5 hover:bg-gray-50" href="https://github.com/" target="_blank">GitHub</a>
+        <a className="text-sm rounded-xl border px-3 py-1.5 hover:bg-gray-50" href="https://github.com/vishalkumarmx/ai-resume-analyzer" target="_blank">GitHub</a>
       </div>
     </header>
 
