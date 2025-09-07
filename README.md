@@ -2,7 +2,7 @@
 
 Analyze your resume in seconds with AI-powered insights—ATS score, missing skills, grammar fixes, and polished summary.
 
-![Resume Analyzer Screenshot](./docs/screenshot.png)
+![Resume Analyzer Screenshot](./docs/ai-resume-analyzer-screenshot.png)
 
 ##  Features  
 
