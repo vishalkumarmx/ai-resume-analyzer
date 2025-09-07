@@ -1,0 +1,38 @@
+{
+  "role": "React Frontend Engineer",
+  "must_have": [
+    "JavaScript (ES6+)",
+    "TypeScript",
+    "React",
+    "React Hooks",
+    "Redux Toolkit",
+    "Zustand",
+    "React Query / TanStack Query",
+    "Next.js",
+    "React Router",
+    "CSS / SCSS",
+    "Tailwind CSS",
+    "Styled Components",
+    "Testing (Jest/RTL)",
+    "GraphQL",
+    "REST APIs",
+    "Form handling (Formik/React Hook Form)",
+    "Webpack/Vite",
+    "Accessibility (a11y)",
+    "Performance (memo, code-splitting)"
+  ],
+  "nice_to_have": [
+    "Next.js App Router",
+    "Server Components",
+    "SSR/SSG/ISR",
+    "Storybook",
+    "Playwright/Cypress",
+    "CI/CD (GitHub Actions)",
+    "Docker",
+    "Monorepos (Nx/Turborepo)",
+    "i18n",
+    "Design Systems",
+    "Web Vitals",
+    "SEO for SPAs/Next.js"
+  ]
+}
